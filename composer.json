@@ -1,0 +1,19 @@
+{
+    "name": "php-etl/universign-demo",
+    "type": "project",
+    "require": {
+        "php": "^8.0",
+        "obatfr/universign-service": "^1.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Kiboko\\UniversignDemo\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "sebprt",
+            "email": "sebastien@kiboko.fr"
+        }
+    ]
+}

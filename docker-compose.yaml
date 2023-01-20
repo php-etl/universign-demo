@@ -1,0 +1,12 @@
+version: '3.0'
+services:
+  apache:
+#    image: php:8.0-apache
+    container_name: universign_demo
+    volumes:
+      - ./:/var/www/html/
+      - ./docker/php/conf.d/xdebug.ini:/usr/local/etc/php/conf.d/docker-php-ext-xdebug.ini
+      - ./docker/php/conf.d/error_reporting.ini:/usr/local/etc/php/conf.d/error_reporting.ini
+    ports:
+      - "8001:80"
+    build: '.'
